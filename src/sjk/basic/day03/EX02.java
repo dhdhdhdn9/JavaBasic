@@ -110,7 +110,7 @@ public class EX02 {
 		// 괄호가 필요함
 		
 		// System.out.print( "How about this one" ++ '?' + 'Huh?' );
-		// +를 한개만
+		// +를 한개만, '' 대신 ""
 		
 	}
 	
