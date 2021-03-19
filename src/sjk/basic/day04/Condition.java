@@ -69,12 +69,10 @@ public class Condition {
 					
 		// 결과 출력
 		System.out.printf(fmt, tax);
-								
-						 //while 함수의 닫힘 괄호
-			
-		
-		
-	
+
+
+
+
 	}
 		
 }
