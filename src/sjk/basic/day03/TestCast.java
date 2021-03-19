@@ -22,6 +22,8 @@ public class TestCast {
 		// System.out.println("평균은 " + avg + "입니다");
 		String fmt = "평균은 %.1f입니다.";
 		System.out.printf(fmt, avg);
+		// System.out.printf("출력 서식", 출력할 내용);
+		// System.out.printf(fmt, 출력할 내용);
 		
 	}
 }
