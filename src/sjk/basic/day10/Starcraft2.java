@@ -24,7 +24,7 @@ public class Starcraft2 {
 
         f.attack();
         f.move();
-        f.specialAbility();
+        f.ability();
 
 
 
@@ -142,7 +142,7 @@ class Marine2 extends Terran2 implements Action {
 }
 
 
-class Firebat2 extends Terran2 {
+class Firebat2 extends Terran2 implements Action {
 
     final String fmtattack  = "화염방사기를 이용해서 대상에 %d의 피해를 주고 있습니다. \n";
     final String fmtmove  = "지정한 위치로 %.2f 속도로 이동중입니다. \n";
@@ -162,20 +162,17 @@ class Firebat2 extends Terran2 {
         super(name, hp, pow, mvspd, mineral, gas);
     }
 
-
+    @Override
     public void attack() {
-        System.out.printf(fmtattack, pow);
-    }
+        System.out.printf(fmtattack, pow); }
 
+    @Override
     public void move() {
-        System.out.printf(fmtmove, mvspd);
-    }
+        System.out.printf(fmtmove, mvspd); }
 
-
-    public void specialAbility() {
-        System.out.printf(fmtabbilty);
-    }
-
+    @Override
+    public void ability() {
+        System.out.printf(fmtabbilty); }
 }
 
 
