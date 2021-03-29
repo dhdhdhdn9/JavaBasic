@@ -1,14 +1,17 @@
 package sjk.basic.sungjuk;
 
+// 값을 저장하는 클래스
+// 이를 처리하려면 따로 클래스를 만들어서 인터페이스로 사용함
+
 public class SungJukVO {
 
-    private String name;
-    private int kor;
-    private int eng;
-    private int mat;
-    private int tot;
-    private double avg;
-    private char grd;
+    protected String name;
+    protected int kor;
+    protected int eng;
+    protected int mat;
+    protected int tot;
+    protected double avg;
+    protected char grd;
 
 
     public SungJukVO(String name, int kor, int eng, int mat) {
