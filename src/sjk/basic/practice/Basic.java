@@ -3,18 +3,10 @@ package sjk.basic.practice;
 public class Basic {
     public static void main(String[] args) {
 
-//        Houndmaster f = new Houndmaster();
-//        System.out.println("화염방사대 체력 : " + f.hp);
-//
-//        f.attack();
-//        f.move();
-//        f.ability();
 
         BountyHunter bh = new BountyHunter();
         bh.hero();
         bh.atk();
-
-
 
 
     }
@@ -71,7 +63,7 @@ class BountyHunter extends DarkStat implements Action {
     @Override
     public void atk() {
         System.out.println(
-                (int)(poss) * 6 + 5);
+                "현상금 사냥꾼이 " + ((int)((poss) * (10 - 5 + 1) + 5)) + "의 피해를 주었습니다.");
     }
 
 }
