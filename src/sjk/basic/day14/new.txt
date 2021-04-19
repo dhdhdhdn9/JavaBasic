@@ -1,0 +1,8 @@
+038b67cf - banana
+apple - a92ed050
+peach - 77a460fa
+
+0-9 a-f
+
+fileformat.info/tool/hash.htm 접속
+CRC32 값
