@@ -3,7 +3,10 @@ package sjk.basic.sungjuk;
 // 값을 저장하는 클래스
 // 이를 처리하려면 따로 클래스를 만들어서 인터페이스로 사용함
 
-public class SungJukVO {
+import java.io.Serializable;
+
+// 직렬화를 지원하려면 Serializable 구현해서 정의해야 한다.
+public class SungJukVO implements Serializable {
 
     protected String name;
     protected int kor;

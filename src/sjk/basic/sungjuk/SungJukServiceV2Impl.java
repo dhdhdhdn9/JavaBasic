@@ -1,5 +1,7 @@
 package sjk.basic.sungjuk;
 
+import sun.security.provider.Sun;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -128,11 +130,49 @@ public class SungJukServiceV2Impl implements SungJukServiceV2 {
 
 
     @Override
-    public void modifySungJuk() { }
+    public void modifySungJuk() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("수정할 학생 이름 :");
+        String mname = sc.next();
+
+        for(SungJukVO sj : sjdata) {
+            if(sj.getName().equals(mname)) {
+                System.out.print("수정할 과목 : ");
+                String msub = sc.next();
+                System.out.println("수정 점수 : ");
+                int mscore = sc.nextInt();
+
+                if(msub.equals("국어"))
+                {
+                    sj.setKor(mscore);
+                    break;
+                }else if(msub.equals("수학")) {
+                    sj.setMat(mscore);
+                    break;
+                } else if(msub.equals("영어")) {
+                    sj.setEng(mscore);
+                    break;
+                } else {
+                    System.out.println("잘못 입력하셨습니다.");
+                    break;
+                }
+            }
+        }
+
+
+    }
 
 
     @Override
-    public void removeSungJuk() { }
+    public void removeSungJuk() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("삭제할 학생의 이름 : ");
+        String dname = sc.next();
+
+        sjdata.removeIf(sj -> sj.getName().equals(dname));
+
+    }
 
 
 }
