@@ -142,6 +142,8 @@ public class SungJukServiceV3Impl implements SungJukServiceV3 {
         System.out.print("조회 학생 번호: ");
         int pos = sc.nextInt();
 
+
+
         try {
             SungJukVO sj = sjdata.get(pos);
 
